@@ -1,0 +1,88 @@
+配置
+
+git config --global user.name 'cuidezhu'
+
+git config --global user.email '4206784@qq.com'
+
+push前注意密钥SSH key是否生成
+
+$ ssh-keygen -t rsa -C "youremail@example.com"
+
+---
+
+git init 初始化仓库
+
+---
+
+git add <文件名>
+
+git status 查看状态
+
+git rm --cached <文件名> 删除文件
+
+git add *.html 添加某一类的文件
+
+git add .  添加所有文件
+
+---
+
+git commit 提交 使用i 然后输入内容  再按esc 接着:q或:q!退出
+
+git commit -m '备注'   简写
+
+---
+
+忽略文件: 在根目录创建一个.gitignore文件
+
+---
+
+创建分支 git branch dev
+
+切换分支 git checkout dev
+
+合并分支 回到主线 git checkout master  然后git merge login
+
+----
+
+github创建一个仓库
+
+git remote 查看是否连接远程库origin
+
+git remote add origin git@github.com:cdz4206784/homework.git
+
+git push -u origin master
+
+---
+
+git clone git@github.com:cdz4206784/homework.git
+
+---
+
+拉取
+
+git pull
+
+---
+
+特殊仓库(可做服务器) 如cdz4206784.github.io
+
+使用自己域名：
+
+1、根目录需要创建 CNAME 文件，内容： www.域名.com
+
+
+2、域名解析（阿里云）
+
+CNAME www 默认 cdz4206784.github.io(记录值)
+
+CNAME @ 默认 cdz4206784.github.io(记录值)
+
+
+
+
+
+
+
+
+
+
