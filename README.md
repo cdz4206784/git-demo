@@ -2,13 +2,21 @@
 
 ## 配置
 
+``` bash
+
 git config --global user.name '名称'
 
 git config --global user.email '邮箱'
 
+```
+
 ## 密钥SSH key生成
 
-$ ssh-keygen -t rsa -C "youremail@example.com"
+``` bash
+
+$ ssh-keygen -t rsa -C '邮箱'
+
+```
 
 ## 基本操作
 
@@ -41,6 +49,8 @@ git commit -m '备注'   简写
 ```
 ## github创建一个远程仓库
 
+``` bash
+
 git remote 查看是否连接远程库origin
 
 git remote add origin 远程仓库地址
@@ -53,7 +63,11 @@ git push -u origin master 第一次push
 
 推送 git push
 
+```
+
 ## 特殊仓库(可做服务器) 如 名称.github.io
+
+``` bash
 
 # 使用自己域名：
 
@@ -64,3 +78,5 @@ git push -u origin master 第一次push
 CNAME www 默认 名称.github.io(记录值)
 
 CNAME @ 默认 名称.github.io(记录值)
+
+```
